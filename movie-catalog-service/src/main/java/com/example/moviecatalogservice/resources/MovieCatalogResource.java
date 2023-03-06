@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 
 import com.example.moviecatalogservice.models.CatalogItem;
 import com.example.moviecatalogservice.models.Movie;
-import com.example.moviecatalogservice.models.Ratings;
+import com.example.moviecatalogservice.models.UserRating;
 
 @RestController
 @RequestMapping("/catalog")
@@ -25,26 +25,16 @@ public class MovieCatalogResource {
 	@RequestMapping("/{userId}")
 	public List<CatalogItem> getCatalog(@PathVariable String userId) {
 		// get all rated movie ids
-		List<Ratings> ratings = Arrays.asList(
-				new Ratings("1234", 4),
-				new Ratings("5678", 3)
-		);
+		UserRating ratings = restTemplate.getForObject("http://localhost:8082/ratingsdata/users/" + userId, UserRating.class);
 		
-		// for each movie id, call movie info service and get details
-		return ratings.stream().map(rating -> {
-//			new CatalogItem("abc", "movie abc", 4)
+		
+		return ratings.getUserRating().stream().map(rating -> {
+			// for each movie id, call movie info service and get details
 			Movie movie = restTemplate.getForObject("http://localhost:8081/movies/" + rating.getMovieId(), Movie.class);
+			// put them all together
 			return new CatalogItem(movie.getName(), "Desc", rating.getRating());
 		}
 		).collect(Collectors.toList());
-		
-		
-		// put them all together
-		
-		
-//		return Collections.singletonList(
-//				
-//				new CatalogItem("abc", "movie abc", 4)
-//		);
+
 	}
 }
