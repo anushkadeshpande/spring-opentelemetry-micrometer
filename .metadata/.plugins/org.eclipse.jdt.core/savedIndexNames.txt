@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+D:\Learning\spring-opentelemetry\.metadata\.plugins\org.eclipse.jdt.core
+3120250875.index
+1865797976.index
+309141623.index
+2011417658.index
+41681386.index
