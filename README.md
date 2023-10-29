@@ -1,3 +1,9 @@
+## Trace ID and Span ID in logs:
+![Jaeger](https://firebasestorage.googleapis.com/v0/b/github-readme-content.appspot.com/o/traceid_and_spanid_in_logs.png?alt=media&token=17bf3fba-2aa1-422d-a694-fe2ced54a294&_gl=1*1w3qkgn*_ga*MjAxOTg3ODU3Mi4xNjg1ODU4Nzkz*_ga_CW55HF8NVT*MTY5ODYxNTM2Ni4xOS4xLjE2OTg2MTU2MDIuNjAuMC4w)
+
+
+## Jaeger:
+
 ![Jaeger](https://firebasestorage.googleapis.com/v0/b/github-readme-content.appspot.com/o/Screenshot%20(164).png?alt=media&token=0c96fe7b-656b-4dbb-9cf7-5a8958b0deb9&_gl=1*1uzbw5d*_ga*MjAxOTg3ODU3Mi4xNjg1ODU4Nzkz*_ga_CW55HF8NVT*MTY5ODE1MTc2NS4xNC4xLjE2OTgxNTIzMTYuMzcuMC4w)
 
 ![Jaeger](https://firebasestorage.googleapis.com/v0/b/github-readme-content.appspot.com/o/Screenshot%20(165).png?alt=media&token=91995875-e5ae-4e89-b5b7-d4d205e63d6b&_gl=1*1xs8ag8*_ga*MjAxOTg3ODU3Mi4xNjg1ODU4Nzkz*_ga_CW55HF8NVT*MTY5ODE1MTc2NS4xNC4xLjE2OTgxNTIzMzkuMTQuMC4w)
